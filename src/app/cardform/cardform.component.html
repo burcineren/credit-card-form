@@ -5,6 +5,7 @@
     <app-input label="Son Kullanma Tarihi" [control]="$any(cardForm).get('expiration')"></app-input>
     <app-input label="Güvenlik Kodu" [control]="$any(cardForm).get('securityCode')"></app-input>
 
+    <button class="button is-warning" (click)="ResetForm()" type="button">Temizle</button>
     <button class="button is-primary" [disabled]="cardForm.invalid" type="submit">Kaydet</button>
 
 </form>

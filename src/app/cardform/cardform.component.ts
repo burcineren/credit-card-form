@@ -38,4 +38,7 @@ export class CardformComponent implements OnInit {
   onSubmit(){
     console.log("onSubmit called");
   }
+  ResetForm(){
+    this.cardForm.reset();
+  }
 }
